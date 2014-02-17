@@ -1,0 +1,5 @@
+<script>
+	var token = "<%= user.token %>";
+	if(token) parent.postMessage("token:" + token,"*");
+	else parent.postMessage("error", "*");
+</script>
